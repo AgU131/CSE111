@@ -15,4 +15,10 @@ v = (math.pi * w**2 * a * (w * a + 2540 * d)) / 10000000000
 
 print(f"The approximate volume is {v:.2f} liters")
 
+# Open a text file named volumes.txt in append mode.
+with open("volumes.txt", "at") as volumes_file:
+  # Print a city's name and information to the file.
+  print(city_name, file=volumes_file)
+  print(f"width:{w}, ratio:{a}, diameter:{d}", file=volumes_file)
+
 
