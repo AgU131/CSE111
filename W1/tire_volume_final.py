@@ -19,6 +19,6 @@ print(f"The approximate volume is {v:.2f} liters")
 with open("volumes.txt", "at") as volumes_file:
   # Print a city's name and information to the file.
   print(city_name, file=volumes_file)
-  print(f"width:{w}, ratio:{a}, diameter:{d}", file=volumes_file)
+  print(f"{w}, {a}, {d}", file=volumes_file)
 
 
